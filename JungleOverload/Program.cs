@@ -10,10 +10,15 @@ namespace JungleOverload
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("What is your name? ");
-            var nameOfNewEmployee = Console.ReadLine();
+            Console.WriteLine("What is your first name? ");
+            var firstNameOfNewEmployee = Console.ReadLine();
             //var nameOfNewEmployee = new Employee(lineCapture);
-            Console.WriteLine(nameOfNewEmployee);
+            var newPerson = new Employee(firstNameOfNewEmployee, "smith");
+            var aRest = new Restaurant();
+            var randomRest = aRest.randomRestaurant();
+            var personEats = newPerson.Eat();
+            Console.WriteLine($"{personEats} They are at {randomRest}");
+            Console.WriteLine(firstNameOfNewEmployee);
 
 
 
