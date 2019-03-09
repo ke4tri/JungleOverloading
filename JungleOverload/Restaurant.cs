@@ -10,24 +10,21 @@ namespace JungleOverload
         public string RestaurantName { get; set; }
 
         // list of Restaurants
-        public List<Restaurant> listRestaurant = new List<Restaurant>();
+        //public List<Restaurant> listRestaurant = new List<Restaurant>();
 
-        //
-        public Restaurant(string newName)
+        static List<string> restaurants = new List<string>
         {
-            RestaurantName = newName;
-        }
+            "Citysldfkj",
+            "Mcdonalds",
+            "Hardies"
+        };
 
-        public void addRestaurant(Restaurant restaurant)
-        {
-            listRestaurant.Add(restaurant);
-        }
+        // loop over the list of restaurants
 
-        public void removeRestaurant(Restaurant restaurant)
-        {
-            listRestaurant.Remove(restaurant);
-        }
+       
 
+    // methods 
+        
        
     }
 }
