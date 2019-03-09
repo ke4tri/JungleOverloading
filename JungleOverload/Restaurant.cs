@@ -8,12 +8,14 @@ namespace JungleOverload
     {
         //public string newRestaurant { get; set; }
         public string RestaurantName { get; set; }
+
+        // list of Restaurants
         public List<Restaurant> listRestaurant = new List<Restaurant>();
 
+        //
         public Restaurant(string newName)
         {
             RestaurantName = newName;
-
         }
 
         public void addRestaurant(Restaurant restaurant)
@@ -25,5 +27,7 @@ namespace JungleOverload
         {
             listRestaurant.Remove(restaurant);
         }
+
+       
     }
 }
