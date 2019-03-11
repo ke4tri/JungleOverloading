@@ -9,15 +9,10 @@ namespace JungleOverload
         public List<string> Peoples { get; set; } = new List<string>
         {
             "Joe",
-            "Tome",
+            "Tom",
             "Jane"
         };
 
-        //public string Name { get; set; }
-
-        //public int Id { get; set; }
-
-        //public List<string> Names { get; set; }
 
         public string randomPerson()
         {

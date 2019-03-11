@@ -22,13 +22,19 @@ namespace JungleOverload
             var personEats = newPerson.Eat();
             var randomFood = randomFoodFunc.randomFood();
             var personEatsWithPeople = newPerson.Eat();
-            var thePeopleTest = randomPeople.Peoples;
             
+            // each variable has its own value instead of calling the same
+            // variable with the same 'random' value 
             var randomPerson = randomPeople.randomPerson();
+            var randomPersonTwo = randomPeople.randomPerson();
 
-            Console.WriteLine(randomFood, thePeopleTest);
-            Console.WriteLine(randomPerson);
-            Console.WriteLine($"{personEatsWithPeople}");
+          
+            Console.WriteLine($"This is the random Food : {randomFood} and the " +
+                $"People test : {randomPerson}");
+            
+            
+            Console.WriteLine($"This is the random person string {randomPersonTwo}");
+            Console.WriteLine($"This is the person eats with people {personEatsWithPeople}");
             Console.WriteLine($"{personEats} They are at {randomRest}");
             
             
