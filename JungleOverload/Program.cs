@@ -11,32 +11,40 @@ namespace JungleOverload
         static void Main(string[] args)
         {
             Console.WriteLine("What is your first name? ");
+
             var firstNameOfNewEmployee = Console.ReadLine();
-            //var nameOfNewEmployee = new Employee(lineCapture);
             var newPerson = new Employee(firstNameOfNewEmployee, "smith");
             var aRest = new Restaurant();
-            var randomRest = aRest.randomRestaurant();
+            var randomPeople = new People();
+            var randomFoodFunc = new Food();
+
+            var randomRest = aRest.RandomRestaurant();
             var personEats = newPerson.Eat();
+            var randomFood = randomFoodFunc.randomFood();
+            var personEatsWithPeople = newPerson.Eat();
+            var thePeopleTest = randomPeople.Peoples;
+            
+            var randomPerson = randomPeople.randomPerson();
+
+            Console.WriteLine(randomFood, thePeopleTest);
+            Console.WriteLine(randomPerson);
+            Console.WriteLine($"{personEatsWithPeople}");
             Console.WriteLine($"{personEats} They are at {randomRest}");
-            Console.WriteLine(firstNameOfNewEmployee);
+            
+            
 
-
-
-            //var newRest = new Restaurant("New Restaurant");
-            //var mcdonalds = new Restaurant("Old Restaurant");
-            //var hardies = new Restaurant("Good Restaurant");
-            // newRest.addRestaurant(newRest);
-            //newRest.listRestaurant.Add(newRest);
-            //newRest.listRestaurant.Add(mcdonalds);
-            //newRest.listRestaurant.Add(hardies);
-            //Console.WriteLine("Add 4 restaurants : ");
-
+            
             Console.ReadLine();
-           
         }
     }
-    
 }
+    
+           
+
+
+
+        
+
 
 
 

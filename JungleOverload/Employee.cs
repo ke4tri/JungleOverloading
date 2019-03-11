@@ -17,27 +17,48 @@ namespace JungleOverload
 
         }
 
+ 
+
+
+        // Methods 
+
+        // Eats at a random restaurant
         public string Eat()
         {
            return $"{FirstName} is eating.";
         }
 
-        public void Eat(string food)
+        // Eats a specific food at the offic
+        public string Eat(string food)
         {
-
+            return $"{FirstName} ate {food} at the office.";
         }
 
-        public void Eat(List<Employee> comapnions)
+        // Eats at a random restaurant with all the first names on name list
+        public void Eat(List<Employee> companions)
         {
-
+            foreach (var employee in companions)
+            {
+                
+                Console.WriteLine($"{employee}");
+                
+            }
+            Console.WriteLine("this is the list of emps");
         }
 
-        public void Eat(string food, List<Employee> comapnions)
+        public string Eat(string food, List<Employee> comapnions)
         {
-
+            IEnumerable<object> companions = null;
+            foreach (var employee in companions)
+            {
+                Console.WriteLine($"{employee}");
+            }
+            return $"Replace with the write code here";
         }
 
     }
 }
+
+          
 
 

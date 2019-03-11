@@ -6,11 +6,7 @@ namespace JungleOverload
 {
     public class Restaurant
     {
-        //public string newRestaurant { get; set; }
-        // public string RestaurantName { get; set; }
-
-        // list of Restaurants
-        //public List<Restaurant> listRestaurant = new List<Restaurant>();
+        
 
         List<string> restaurants = new List<string>
         {
@@ -19,18 +15,14 @@ namespace JungleOverload
             "Hardies"
         };
 
-        public string randomRestaurant()
+        public string RandomRestaurant()
         {
             var Random = new Random();
             int r = Random.Next(restaurants.Count);
             return ((string)restaurants[r]);
         }
 
-        // loop over the list of restaurants
-
-
-
-        // methods 
+        
 
 
     }
